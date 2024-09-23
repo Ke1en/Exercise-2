@@ -1,13 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        byte byteNum = 2; // 1 байт
-        short shortNum = 34; // 2 байта
-        int number = 1; // 4 байта
-        long longNum = 102354; // 8 байт
+        Scanner scanner = new Scanner(System.in);
 
-        float floatNum = 20f;
-        char symbol = 'f';
-        boolean isNumberInt = false;
-        String stroke = "This is string";
+        System.out.println("Input weight in kg: ");
+        double itemWeight = scanner.nextDouble();
+        System.out.println("Item weight in kg " + itemWeight);
+        System.out.println("Item weight in g " + itemWeight*1000);
+        System.out.println("Item weight in mg " + itemWeight*1000000);
+
+        scanner.close();
     }
 }
